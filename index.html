@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mah e Noor – Luxury Lawn Collection</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet"/>
   <style>
     :root {
       --rose:    #C8896A;
@@ -47,18 +47,32 @@
     }
 
     .logo-urdu {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--rose);
-      letter-spacing: 0.5px;
+      font-size: 28px;
+      font-weight: 400;
+      color: var(--ink);
+      letter-spacing: 2px;
+      line-height: 1;
+      font-family: 'Cormorant Garamond', Georgia, serif;
     }
 
     .logo-eng {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 13px;
-      color: var(--muted);
-      letter-spacing: 2px;
+      font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+      font-size: 10px;
+      color: var(--rose);
+      letter-spacing: 6px;
       text-transform: uppercase;
+      font-style: italic;
+      font-weight: 400;
+      margin-top: 4px;
+      display: block;
+    }
+
+    .logo-line {
+      width: 100%;
+      height: 0.5px;
+      background: var(--rose);
+      opacity: 0.5;
+      margin: 3px 0 2px;
     }
 
     .nav-links {
@@ -570,15 +584,16 @@
 <!-- NAV -->
 <nav>
   <div class="logo">
-    <span class="logo-urdu">ردا / مہ نور</span>
-    <span class="logo-eng">Luxury Lawn</span>
+    <span class="logo-urdu">ردا</span>
+    <div class="logo-line"></div>
+    <span class="logo-eng">Mah e Noor</span>
   </div>
   <ul class="nav-links">
     <li><a href="#" onclick="filterProducts('All')">All Collections</a></li>
     <li><a href="#" onclick="filterProducts('Lawn Suits')">Lawn Suits</a></li>
     <li><a href="#" onclick="filterProducts('Embroidered')">Embroidered</a></li>
   </ul>
-  <a href="https://wa.me/923XXXXXXXXX?text=Hello! I want to place an order." class="wa-nav-btn" target="_blank">
+  <a href="https://wa.me/923255028002?text=Hello! I want to place an order." class="wa-nav-btn" target="_blank">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.843L0 24l6.344-1.512A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.368l-.36-.213-3.727.887.927-3.613-.235-.371A9.818 9.818 0 1112 21.818z"/></svg>
     Order on WhatsApp
   </a>
@@ -587,7 +602,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <p class="hero-eyebrow">New Summer Collection 2025</p>
+    <p class="hero-eyebrow">New Summer Collection 2026</p>
     <h1 class="hero-title">
       Luxury Lawn,<br>
       <em>Crafted for You</em>
@@ -636,8 +651,9 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <div class="logo">
-        <span class="logo-urdu">ردا / مہ نور</span>
-        <span class="logo-eng">Luxury Lawn</span>
+        <span class="logo-urdu">ردا</span>
+        <div class="logo-line"></div>
+        <span class="logo-eng">Mah e Noor</span>
       </div>
       <p>Premium lawn suits for women who value elegance. Delivering quality and style across Pakistan since 2020.</p>
     </div>
@@ -650,7 +666,7 @@
     </div>
     <div class="footer-col">
       <h4>Order & Help</h4>
-      <a href="https://wa.me/923XXXXXXXXX" target="_blank">Order on WhatsApp</a>
+      <a href="https://wa.me/923255028002" target="_blank">Order on WhatsApp</a>
       <a href="#">Delivery Info</a>
       <a href="#">Size Guide</a>
       <a href="#">Returns Policy</a>
